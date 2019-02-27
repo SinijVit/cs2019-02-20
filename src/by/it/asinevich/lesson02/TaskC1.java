@@ -10,10 +10,9 @@ package by.it.asinevich.lesson02;
 Sum = 60
 
 */
+import java.util.Scanner;
 class TaskC1 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
 
-
-
-
-
-}
+    }}
