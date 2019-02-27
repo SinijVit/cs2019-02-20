@@ -1,4 +1,4 @@
-package by.it.asinevich.lesson02;
+package by.it.asinevich.lesson02.asinevich.lesson02;
 
 /*
 напишите тело main программы которая выводит на экран 5 строк

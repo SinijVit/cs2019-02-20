@@ -1,4 +1,4 @@
-package by.it.asinevich.lesson02;
+package by.it.asinevich.lesson02.asinevich.lesson02;
 /*
 напишите программу которая выводит на экран
 Hello world!

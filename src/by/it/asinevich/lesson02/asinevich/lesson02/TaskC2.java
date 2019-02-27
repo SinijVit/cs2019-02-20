@@ -1,4 +1,4 @@
-package by.it.asinevich.lesson02;
+package by.it.asinevich.lesson02.asinevich.lesson02;
 
 /* Нужно написать программу, которая вводит два числа с клавиатуры
 и 4 раза выводит их сумму с обозначением системы счисления на экран в
@@ -13,4 +13,14 @@ BIN:100010+11010=111100
 HEX:22+1a=3c
 OCT:42+32=74
 */
-//class TaskC2
+import java.util.Scanner;
+class TaskC2{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println();
+
+    }
+}
