@@ -21,5 +21,13 @@ Lesson 03. Task A2. Стихотворение
 Для автоматической проверки откройте и запустите класс Testing
 */
 class TaskA2 {
+    public static void main(String[] args) {
+        String a="Как верно здравый смысл народа";
+        String b="Значенье слов определил - ";
+        String c="Недаром, видно, от «ухода»";
+        String d="Он вывел слово «уходил»…";
+        System.out.println("Мое любимое стихотворение:");
+        System.out.println(a + "\n" + b + "\n" + c + "\n" + d);
+    }
 
 }
