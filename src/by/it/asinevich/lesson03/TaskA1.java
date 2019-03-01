@@ -39,7 +39,7 @@ class TaskA1 {
        Scanner sc=new Scanner(System.in) ;
        int i = sc.nextInt();
        int j = sc.nextInt();
-       int sum = i+j;
+        int sum = i+j;
         int sub = i-j;
         int mul = i*j;
         int div = i/j;
