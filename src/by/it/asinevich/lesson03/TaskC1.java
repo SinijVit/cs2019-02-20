@@ -25,7 +25,12 @@ TC = (TF – 32) * 5/9
 
 
 class TaskC1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double t = sc.nextDouble();
 
+    }
+}
 
 
 
