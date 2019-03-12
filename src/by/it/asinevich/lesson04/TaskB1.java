@@ -26,5 +26,18 @@ package by.it.asinevich.lesson04;
 
 */
 public class TaskB1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int i = sc.nextInt();
+        int j = i % 4;
+        int k = i % 400;
+        int l = i % 100;
+        if (k != 0 && l == 0)
+            System.out.println("количество дней в году: 365");
+        else if (j == 0)
+            System.out.println("количество дней в году: 366");
+        else
+            System.out.println("количество дней в году: 365");
 
+    }
 }
