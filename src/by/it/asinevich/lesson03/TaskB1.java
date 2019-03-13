@@ -23,6 +23,8 @@ float f - присваивание в десятичном формате
 Для автоматической проверки откройте и запустите класс Testing
 */
 
+  import java.util.Scanner;
+
 strictfp class TaskB1 {
     public static  void main(String[] args) {
         double d = 111.111;

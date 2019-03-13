@@ -25,6 +25,7 @@ package by.it.asinevich.lesson04;
 4. Если введенный год не является високосным, необходимо вывести текст: "количество дней в году: 365"
 
 */
+import java.util.Scanner;
 public class TaskB1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
