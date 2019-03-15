@@ -25,12 +25,30 @@ package by.it.asinevich.lesson04;
 
 public class TaskC3 {
     public static void main(String[] args) {
-        for (int i = 0; i < 100; i++)
-            print(i);
+
+
+        for (int raw = 2; raw <= 10; raw++)
+            for (int column = 2; column <= 10; column++)
+                System.out.println(string(raw) + " умножить на " + string(column) + " равно " + string(raw * column));
+
     }
 
+    private static String string(int i) {
+        String[] units = {
+                "ноль", "один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь",
+                "девять", "десять", "одинадцать", "двенадцать", "тринадцать", "четырнадцать",
+                "пятнадцать", "шестнадцать", "семнадцать", "восемнадцать", "девятнадцать"};
+        String[] tens = {
+                "ноль", "десять", "двадцать", "тридцать", "сорок", "пятьдесят",
+                "шестьдесят", "семьдесят", "восемьдесят", "девяносто", "сто"};
+
+        if (i < 20)
+            return units[i];
+        int d = i / 10;
+        int m = i % 10;
+        if (m == 0)
+            return tens[d];
+        else
+            return tens[d] + " " + units[m];
+    }
 }
-
-    public static void print(String[] args) {
-
-    }
