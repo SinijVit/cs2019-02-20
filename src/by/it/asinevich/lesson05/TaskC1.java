@@ -10,15 +10,42 @@ package by.it.asinevich.lesson05;
     Сначала тот, который для x%3, потом тот, который для x%2, потом последний.
 */
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class TaskC1 {
-    public static void main(String[] args) throws Exception
-    {
+    public static void main(String[] args) throws Exception {
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Integer> baseList = new ArrayList();
+        ArrayList<Integer> listDiv3 = new ArrayList();
+        ArrayList<Integer> listDiv2 = new ArrayList();
+        ArrayList<Integer> listRemain = new ArrayList();
 
+        for (int i = 0; i < 20; i++) {
+            int value = scanner.nextInt();
+            baseList.add(value);
+        }
+        for (int i = 0; i < 20; i++) {
+            int var = baseList.get(i);
+            if (var % 3 == 0 && var % 2 == 0) {
+                listDiv3.add(var);
+                listDiv2.add(var);
+            } else if (var % 3 == 0 && var % 2 != 0) {
+                listDiv3.add(var);
+            } else if (var % 3 != 0 && var % 2 == 0) {
+                listDiv2.add(var);
+            } else
+                listRemain.add(var);
+        }
+
+        printList(listDiv3);
+        printList(listDiv2);
+        printList(listRemain);
     }
 
     private static void printList(List<Integer> list) {
+
         for (Integer aList : list) System.out.println(aList);
     }
 
